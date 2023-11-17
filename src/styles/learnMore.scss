@@ -1,0 +1,12 @@
+.learnMore {
+  height: 29px;
+  width: 93px;
+  border-bottom: 1px solid $c-gray;
+  &-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: $c-gray;
+    font-weight: 400;
+    line-height: 19px;
+  }
+}

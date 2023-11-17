@@ -1,0 +1,157 @@
+.contact {
+  margin: 100px auto;
+  width: 280px;
+  &__info-img {
+    display: none;
+  }
+  &__info-button {
+    background-color: $c-gray;
+    color: #F2F2F2;
+    height: 60px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    width: 100%;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &__title {
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  &__info-form-element {
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 14px;
+    background-color: $c-beige;
+    border: none;
+    width: 100%;
+    border-bottom: solid 1px $c-green;
+    color: $c-gray;
+    margin-bottom: 25px;
+  }
+  &__info-form-message {
+    width: 100%;
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 14px;
+    background-color: $c-beige;
+    border: none;
+    border-bottom: solid 1px $c-green;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+  .contact {
+    margin: 100px auto;
+    width: 714px;
+    display: flex;
+    &__info-img {
+      display: block;
+      height: 407px;
+      width: 342px;
+      margin-left: 30px;
+    }
+    &__title {
+      line-height: 36px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    &__text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+    }
+    &__info-form-element {
+      font-weight: 400;
+      line-height: 21px;
+      font-size: 14px;
+      background-color: $c-beige;
+      border: none;
+      width: 100%;
+      border-bottom: solid 1px $c-green;
+      color: $c-gray;
+      margin-bottom: 25px;
+    }
+    &__info-form-message {
+      width: 100%;
+      font-weight: 400;
+      line-height: 21px;
+      font-size: 14px;
+      background-color: $c-beige;
+      border: none;
+      border-bottom: solid 1px $c-green;
+      margin-bottom: 40px;
+    }
+    &__info-button {
+      background-color: $c-gray;
+      color: #F2F2F2;
+      height: 60px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 21px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1201px) {
+
+.contact {
+  margin: 200px auto;
+  width: 1180px;
+  display: flex;
+  &__info-img {
+    display: block;
+    height: 580px;
+    width: 539px;
+    margin-left: 120px;
+  }
+  &__title {
+    line-height: 40px;
+    font-size: 36px;
+    font-weight: 600;
+  }
+&__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+&__info-form-element {
+  font-weight: 400;
+  line-height: 27px;
+  font-size: 18px;
+  background-color: $c-beige;
+  border: none;
+  width: 100%;
+  border-bottom: solid 1px $c-green;
+  color: $c-gray;
+  margin-bottom: 50px;
+}
+&__info-form-message {
+  width: 100%;
+  font-weight: 400;
+  line-height: 27px;
+  font-size: 18px;
+  background-color: $c-beige;
+  border: none;
+  border-bottom: solid 1px $c-green;
+  margin-bottom: 115px;
+}
+&__info-button {
+  background-color: $c-gray;
+  color: #F2F2F2;
+  height: 60px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  width: 100%;
+}
+}
+}

@@ -1,7 +1,46 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header.scss";
+@import "burger.scss";
+@import "learnMore.scss";
+@import "home.scss";
+@import "aboutUs.scss";
+@import "shop.scss";
+@import "aboutMe.scss";
+@import "pros.scss";
+@import "powder.scss";
+@import "contact.scss";
+@import "footer.scss";
 
 body {
-  background: $c-gray;
+  font-family: "Poppins", sans-serif;
+  background-color: $c-beige;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+button {
+  border: #344F10;
+  border-radius: 15px;
+}
+
+
+.nav {
+  display: none;
+}
+
+
+@media screen and (min-width: 1201px) {
+
+    .logo {
+      box-sizing: border-box;
+      border: solid 1px #344F10;
+      border-radius: 40px;
+      height: 50px;
+      width: 50px;
+    }
+  .powderBox {
+    margin-left: 100px;
+  }
 }
