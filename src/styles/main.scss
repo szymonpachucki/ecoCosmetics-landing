@@ -21,25 +21,22 @@ body {
 }
 
 button {
-  border: #344F10;
+  border: #344f10;
   border-radius: 15px;
 }
-
 
 .nav {
   display: none;
 }
 
-
 @media screen and (min-width: 1201px) {
-
-    .logo {
-      box-sizing: border-box;
-      border: solid 1px #344F10;
-      border-radius: 40px;
-      height: 50px;
-      width: 50px;
-    }
+  .logo {
+    box-sizing: border-box;
+    border: solid 1px #344f10;
+    border-radius: 40px;
+    height: 50px;
+    width: 50px;
+  }
   .powderBox {
     margin-left: 100px;
   }

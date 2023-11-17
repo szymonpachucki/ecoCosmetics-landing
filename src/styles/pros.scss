@@ -50,27 +50,27 @@
 
 @media screen and (min-width: 1201px) {
 
-.pros {
-  width: 1180px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  &__item {
-    margin-bottom: 50px;
-    align-content: center;
-    text-align: center;
-    &-text {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 19px;
-      color: black;
+  .pros {
+    width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    &__item {
+      margin-bottom: 50px;
+      align-content: center;
       text-align: center;
-    }
-    &-img {
-      justify-self: center;
-      display: inline-block;
-      height: 80px;
+      &-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: black;
+        text-align: center;
+      }
+      &-img {
+        justify-self: center;
+        display: inline-block;
+        height: 80px;
+      }
     }
   }
-}
 }

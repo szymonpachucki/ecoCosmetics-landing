@@ -11,30 +11,30 @@
     margin: 10vw;
   }
 
-&__nav {
-  overflow: hidden;
-  color: $c-beige;
-  margin: 0 auto;
-  padding-top: 100px;
-  &-linkBox {
+  &__nav {
     overflow: hidden;
-    width: 90%;
-    margin: 0 auto 50px;
-    border-bottom: 1px solid $c-beige;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 44px;
-
-  }
-  &-link {
-    overflow: hidden;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
     color: $c-beige;
-    align-self: center;
-    text-decoration: none;
+    margin: 0 auto;
+    padding-top: 100px;
+    &-linkBox {
+      overflow: hidden;
+      width: 90%;
+      margin: 0 auto 50px;
+      border-bottom: 1px solid $c-beige;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 44px;
+
+    }
+    &-link {
+      overflow: hidden;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      color: $c-beige;
+      align-self: center;
+      text-decoration: none;
+    }
   }
-}
 }

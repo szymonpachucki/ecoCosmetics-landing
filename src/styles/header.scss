@@ -13,7 +13,7 @@
       max-width: 100%;
       align-self: center;
       display: block; /* Add this line */
-      }
+    }
     &-imgBox {
       width: 24px;
       height: 24px;
@@ -22,22 +22,23 @@
       display: flex; /* Add this line */
       &-logo {
         box-sizing: border-box;
-        border: solid 1px #344F10;
+        border: solid 1px #344f10;
         border-radius: 40px;
         width: 24px;
         height: 24px;
         align-items: center;
         justify-content: center;
         display: flex;
+      }
     }
-    &-navigation {
-      display: none;
-    }
-    &-title {
-    display: none;
-    }
+      &-navigation {
+        display: none;
+      }
+      &-title {
+        display: none;
+      }
+
   }
-}
 }
 
 @media screen and (min-width: 1201px) {

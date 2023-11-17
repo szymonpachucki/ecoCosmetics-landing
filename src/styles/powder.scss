@@ -11,10 +11,10 @@
   &__demo {
     display: flex;
 
-      &-img {
-        width: 182px;
-        height: 398px;
-      }
+    &-img {
+      width: 182px;
+      height: 398px;
+    }
     &-ing {
       width: 98px;
       height: 322px;
@@ -58,30 +58,30 @@
 
   .logo {
     box-sizing: border-box;
-    border: solid 1px #344F10;
+    border: solid 1px #344f10;
     border-radius: 40px;
     height: 50px;
     width: 50px;
   }
 
-.powder {
-  width: 1180px;
-  margin: 0 auto;
-  margin-bottom: 200px;
-  &__title {
-    font-size: 36px;
-    line-height: 40px;
-  }
-  &__demo {
-    display: flex;
-    &-ing {
-      width: 98px;
-      height: 322px;
-      margin-left: auto;
+  .powder {
+    width: 1180px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    &__title {
+      font-size: 36px;
+      line-height: 40px;
     }
-    &-img {
-      width: 480px;
+    &__demo {
+      display: flex;
+      &-ing {
+        width: 98px;
+        height: 322px;
+        margin-left: auto;
+      }
+      &-img {
+        width: 480px;
+      }
     }
   }
-}
 }
