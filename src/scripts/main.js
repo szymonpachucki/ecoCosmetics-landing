@@ -4,6 +4,22 @@
 document.addEventListener('DOMContentLoaded', function() {
   const submitButton = document.querySelector('.contact__info-button');
 
+  const header = document.getElementById('home');
+  const burger = document.getElementById('burger');
+  const menu = document.getElementById('menu');
+  const links = document.getElementsByClassName('burger__nav-link');
+  const close = document.getElementById('close');
+
+  function toggleOpenClass() {
+    header.style.display = 'none';
+    burger.style.display = 'block';
+  }
+
+  function handleBurgerNav() {
+    burger.style.display = 'none';
+    header.style.display = 'block';
+  }
+
   function submitForm(event) {
     event.preventDefault();
 
@@ -79,4 +95,10 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   submitButton.addEventListener('click', submitForm);
+  menu.addEventListener('click', toggleOpenClass);
+
+  for (const link of links) {
+    link.addEventListener('click', handleBurgerNav);
+  }
+  close.addEventListener('click', handleBurgerNav);
 });
