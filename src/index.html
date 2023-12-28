@@ -54,7 +54,7 @@
           class="burger__close"
           src="./images/close.svg"
           alt="menu"
-          onclick="toggleOpenClass()"
+          onclick="handleBurgerNav()"
         >
       </div>
       <nav  class="burger__nav">
@@ -245,15 +245,30 @@
         <form class="contact__info-form" action="your-backend-url"
            method="POST" target="myFrame">
           <h3 class="contact__text">We will help you choose a product that suits you and answer your other questions</h3>
-          <input class="contact__info-form-element" type="text"
-             placeholder="   Name" name="name"
-              required>
-          <input class="contact__info-form-element" type="email"
-             placeholder="   Email" name="email"
-              required>
-          <textarea class="contact__info-form-message" placeholder="   Message"
-             name="message" rows="1"
-             required></textarea>
+          <input
+            class="contact__info-form-element"
+            type="text"
+            placeholder="Name"
+            name="name"
+            id="name"
+            required
+          >
+          <input
+            class="contact__info-form-element"
+            type="email"
+            placeholder="Email"
+            name="email"
+            id="email"
+            required
+          >
+          <textarea
+            class="contact__info-form-message"
+            placeholder="Message"
+            name="message"
+            rows="1"
+            id="message"
+            required
+          ></textarea>
           <button class="contact__info-button" type="submit">Send a message</button>
         </form>
       </div>
@@ -296,35 +311,13 @@
     </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
     <script>
-      function toggleOpenClass() {
         const element = document.getElementById('menu');
         const cartBox = document.getElementById('cartBox');
-
-        // Sprawdź, czy element istnieje
-        if (element && cartBox) {
-          // Sprawdź, czy element ma już klasę "open"
-          if (element.classList.contains('open')) {
-            // Jeśli ma, usuń ją
-            element.classList.remove('open');
-            console.error('remove');
-            // Przywróć widoczność logo i koszyka
-            document.querySelector('.logo').style.display = 'flex';
-            cartBox.style.display = 'block';
-            burger.style.display = 'none';
-            home.style.display = 'block';
-          } else {
-            // Jeśli nie ma, dodaj ją
-            element.classList.add('open');
-            console.error('add');
-            // Ukryj logo i koszyk
-            document.querySelector('.logo').style.display = 'none';
-            cartBox.style.display = 'none';
-            burger.style.display = 'block';
-            home.style.display = 'none';
-          }
-        } else {
-          console.error("Element 'menu' or 'cartBox' not found.");
-        }
+        const header = document.getElementById('home');
+        const burger = document.getElementById('burger');
+      function toggleOpenClass() {
+        header.style.display = 'none';
+        burger.style.display = 'block';
       }
       function handleBurgerNav() {
         cartBox.style.display = 'block';
@@ -332,6 +325,7 @@
             home.style.display = 'block';
             document.querySelector('.logo').style.display = 'flex';
       }
+
     </script>
   </body>
 </html>
