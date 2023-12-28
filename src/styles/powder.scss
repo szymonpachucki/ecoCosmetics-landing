@@ -35,10 +35,13 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 
   .powder {
-    width: 740px;
+    width: calc((100vw - 740px) / 2 + 740px);
     margin: 0 auto;
+    margin-right: 0;
     margin-bottom: 100px;
     &__demo {
+      margin-left: calc(100vw - 740px);
+
       display: flex;
       &-ing {
         width: 98px;

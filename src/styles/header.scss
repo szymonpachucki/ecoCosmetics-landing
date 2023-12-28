@@ -12,14 +12,19 @@
       max-height: 100%;
       max-width: 100%;
       align-self: center;
-      display: block; /* Add this line */
+      display: block;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
     &-imgBox {
       width: 24px;
       height: 24px;
       align-items: center;
       justify-content: center;
-      display: flex; /* Add this line */
+      display: flex;
       &-logo {
         box-sizing: border-box;
         border: solid 1px #344f10;
